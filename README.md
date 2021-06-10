@@ -1,5 +1,11 @@
 ### Hi there 👋
 
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/raulvictorrosa/)](https://www.linkedin.com/in/raulvictorrosa/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:raulvictorrosa@gmail.com)](mailto:raulvictorrosa@gmail.com)
+
+
+- 📚 I’m currently Graduating in Systems Information on UDESC
+
 <!--
 **raulvictorrosa/raulvictorrosa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
