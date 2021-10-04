@@ -163,8 +163,8 @@ const HomeLayout = () => {
           </Heading>
           <Heading fontSize="2xl" letterSpacing="tighter" mb="10" textTransform="uppercase">
             React Developer ·{' '}
-            <Link href="mailto:ralvictorrosa@gmail.com" target="_blank" color="blue.400">
-              ralvictorrosa@gmail.com
+            <Link href="mailto:raulvictorrosa@gmail.com" target="_blank" color="blue.400">
+              raulvictorrosa@gmail.com
             </Link>
           </Heading>
           <Text fontSize="lg" lineHeight="tall" mb="10">
