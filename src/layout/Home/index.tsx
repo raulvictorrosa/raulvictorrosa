@@ -41,30 +41,125 @@ type ExperienceTypes = {
     linkedinPage: string;
   };
   contract: string;
-  description: string[];
+  startDate: string;
+  endDate: string;
+  description?: string[];
+};
+
+type EducationTypes = {
+  degree: string;
+  school: {
+    name: string;
+    linkedinPage: string;
+  };
+  fieldOfStudy?: string;
+  startDate: string;
+  endDate: string;
+  description?: string[];
 };
 
 const arrayListItems: ItemTypes[] = [
   { to: 'about', title: 'About' },
+  { to: 'skills', title: 'Skills' },
   { to: 'experience', title: 'Experience' },
   { to: 'education', title: 'Education' },
-  { to: 'interests', title: 'Interests' },
 ];
 
 const experiences: ExperienceTypes[] = [
   {
-    title: 'about',
+    title: 'React Developer',
     company: {
       name: 'Foton Tech',
-      linkedinPage: 'https://www.linkedin.com/company/foton-tech/mycompany/',
+      linkedinPage: 'https://www.linkedin.com/company/foton-tech',
     },
     contract: 'Full-time',
+    startDate: 'Jun 2021',
+    endDate: 'Present',
     description: [
       'Mainly developing systems with React and Next.js;',
       'Developing landing pages using Next.js and Strapi CMS;',
       'Transforming Figma layouts to pages and components;',
       'Integration Crypto transactions with Web3 library;',
     ],
+  },
+  {
+    title: 'Full-stack Developer',
+    company: {
+      name: 'Buddemeyer',
+      linkedinPage: 'https://www.linkedin.com/company/buddemeyer-s-a-/',
+    },
+    contract: 'Full-time',
+    startDate: 'Dec 2017',
+    endDate: 'May 2021',
+    description: [
+      'Helping improve the internal systems developed with PHP, JS, MySQL and SQLServer;',
+      'Developing reports, routines and new scheduled tasks to run with PHP;',
+      'Using docker for development environment;',
+      'Developed a system with React for the company control products;',
+    ],
+  },
+  {
+    title: 'Front-end Developer',
+    company: {
+      name: 'Mutech Web Solutions',
+      linkedinPage: 'https://www.linkedin.com/company/mutechbr',
+    },
+    contract: 'Full-time',
+    startDate: 'Mar 2017',
+    endDate: 'Mar 2018',
+    description: [
+      'Working with the WordPress platform in the development of institutional websites, landing pages and catalogs of products;',
+      'Coding websites with WordPress CLI and automated task runner like Grunt for automate the creation of new site',
+      'Developed more then 7 themes as front-end with WordPress for this company;',
+    ],
+  },
+  {
+    title: 'Front-end Developer',
+    company: {
+      name: 'Xthor',
+      linkedinPage: 'https://www.linkedin.com/company/xthor/',
+    },
+    contract: 'Full-time',
+    startDate: 'Mar 2017',
+    endDate: 'Mar 2018',
+    description: [
+      'Working with the WordPress platform in the development of institutional websites, landing pages and catalogs of products;',
+      'Using grunt to minify js and compile scss files;',
+      'Developed more then 10 themes as front-end with WordPress for this company;',
+      'Developing custom pages for Facebook, creating email signatures and marketing emails;',
+    ],
+  },
+];
+
+const education: EducationTypes[] = [
+  {
+    degree: 'Information Systems Management',
+    school: {
+      name: 'State University  of Santa Catarina',
+      linkedinPage: 'https://www.linkedin.com/school/universidade-do-estado-de-santa-catarina',
+    },
+    fieldOfStudy: 'Bachelor Degree in Information Systems',
+    startDate: '2015',
+    endDate: '2022',
+  },
+  {
+    degree: 'Proficiency in English language',
+    school: {
+      name: 'TopWay English School',
+      linkedinPage: 'https://www.linkedin.com/company/topway',
+    },
+    fieldOfStudy: 'Teaching English as a Second Language',
+    startDate: '2014',
+    endDate: '2017',
+  },
+  {
+    degree: 'Developer React',
+    school: {
+      name: 'Udacity Brasil',
+      linkedinPage: 'https://www.linkedin.com/school/udacity',
+    },
+    startDate: 'Nov 2017',
+    endDate: 'Mar 2018',
   },
 ];
 
@@ -106,7 +201,7 @@ const HomeLayout = () => {
     </Flex>
   );
 
-  const ExperienceCard = ({ title, company, contract, description }: ExperienceTypes) => (
+  const ExperienceCard = ({ title, company, contract, startDate, endDate, description }: ExperienceTypes) => (
     <Flex>
       <Flex direction="column" grow={1}>
         <Link href={company.linkedinPage} target="_blank" rel="noreferrer">
@@ -117,14 +212,46 @@ const HomeLayout = () => {
             {company.name} · {contract}
           </Heading>
         </Link>
-        <UnorderedList>
-          {description.map((item, key) => (
-            <ListItem key={key}>{item}</ListItem>
-          ))}
-        </UnorderedList>
+        {description && (
+          <UnorderedList>
+            {description.map((item, key) => (
+              <ListItem key={key}>{item}</ListItem>
+            ))}
+          </UnorderedList>
+        )}
       </Flex>
       <Flex direction="column" shrink={0}>
-        <Text color="blue.400">Jun 2021 – Present</Text>
+        <Text color="blue.400">
+          {startDate} – {endDate}
+        </Text>
+      </Flex>
+    </Flex>
+  );
+
+  const EducationCard = ({ degree, school, fieldOfStudy, startDate, endDate, description }: EducationTypes) => (
+    <Flex>
+      <Flex direction="column" grow={1}>
+        <Link href={school.linkedinPage} target="_blank" rel="noreferrer">
+          <Heading as="h3" fontSize="3xl" letterSpacing="tighter" mb="1" textTransform="uppercase">
+            {degree}
+          </Heading>
+          <Heading as="h4" fontSize="xl" letterSpacing="tighter" fontWeight="500" mb="4" textTransform="uppercase">
+            {school.name}
+            {fieldOfStudy && ` · ${fieldOfStudy}`}
+          </Heading>
+        </Link>
+        {description && (
+          <UnorderedList>
+            {description.map((item, key) => (
+              <ListItem key={key}>{item}</ListItem>
+            ))}
+          </UnorderedList>
+        )}
+      </Flex>
+      <Flex direction="column" shrink={0}>
+        <Text color="blue.400">
+          {startDate} – {endDate}
+        </Text>
       </Flex>
     </Flex>
   );
@@ -146,9 +273,9 @@ const HomeLayout = () => {
             {arrayListItems.map((item, key) => (
               <RenderLinkItem key={key} to={item.to} title={item.title} />
             ))}
-            <ListItem color="white" cursor="pointer" letterSpacing="2px" textTransform="uppercase">
+            {/* <ListItem color="white" cursor="pointer" letterSpacing="2px" textTransform="uppercase">
               Languages
-            </ListItem>
+            </ListItem> */}
           </UnorderedList>
         </VStack>
       </Flex>
@@ -181,11 +308,46 @@ const HomeLayout = () => {
           </HStack>
         </Section>
 
+        <Section name="skills">
+          <Heading fontSize="6xl" letterSpacing="tighter" mb="12" textTransform="uppercase">
+            Skills
+          </Heading>
+          <VStack align="normal" spacing={12}>
+            <Flex direction="column">
+              <Heading as="h3" fontSize="3xl" letterSpacing="tighter" mb="1" textTransform="uppercase">
+                Most confident with:
+              </Heading>
+              <Heading as="h4" fontSize="xl" letterSpacing="tighter" fontWeight="500" mb="4">
+                Javascript, React, TypeScript, Next.js, CSS (preferably SCSS) and most of its frameworks like Styled
+                Components, Emotion, Chakra UI, Bootstrap, Material UI, design systems and prototypes with Figma,
+                environment WSL for development. Like to use ESLint and Prettier in the projects I work on.
+              </Heading>
+            </Flex>
+            <Flex direction="column">
+              <Heading as="h3" fontSize="3xl" letterSpacing="tighter" mb="1" textTransform="uppercase">
+                I have good knowledge on:
+              </Heading>
+              <Heading as="h4" fontSize="xl" letterSpacing="tighter" fontWeight="500" mb="4">
+                Cypress and testing-library for tests, Redux, React Native, Expo, Node.js, development environment with
+                Docker, for version control using GitHub, GitLab
+              </Heading>
+            </Flex>
+            <Flex direction="column">
+              <Heading as="h3" fontSize="3xl" letterSpacing="tighter" mb="1" textTransform="uppercase">
+                I can manage with some help:
+              </Heading>
+              <Heading as="h4" fontSize="xl" letterSpacing="tighter" fontWeight="500" mb="4">
+                MongoDB, MySQL, SQL Server
+              </Heading>
+            </Flex>
+          </VStack>
+        </Section>
+
         <Section name="experience">
           <Heading fontSize="6xl" letterSpacing="tighter" mb="12" textTransform="uppercase">
             Experience
           </Heading>
-          <VStack align="flex-start" spacing={12}>
+          <VStack align="normal" spacing={12}>
             {experiences.map((job, key) => (
               <ExperienceCard
                 key={key}
@@ -193,6 +355,27 @@ const HomeLayout = () => {
                 company={job.company}
                 contract={job.contract}
                 description={job.description}
+                startDate={job.startDate}
+                endDate={job.endDate}
+              />
+            ))}
+          </VStack>
+        </Section>
+
+        <Section name="education">
+          <Heading fontSize="6xl" letterSpacing="tighter" mb="12" textTransform="uppercase">
+            Education
+          </Heading>
+          <VStack align="normal" spacing={12}>
+            {education.map((study, key) => (
+              <EducationCard
+                key={key}
+                degree={study.degree}
+                school={study.school}
+                fieldOfStudy={study.fieldOfStudy}
+                startDate={study.startDate}
+                endDate={study.endDate}
+                description={study.description}
               />
             ))}
           </VStack>
