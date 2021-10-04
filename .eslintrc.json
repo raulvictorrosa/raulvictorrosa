@@ -1,0 +1,59 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "next",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-import-helpers"
+  ],
+  "rules": {
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/(^path)|(^fs)/",
+          "/^react$/",
+          "/^next/",
+          "/^vite/",
+          "/vite/",
+          "/^react/",
+          "/^@apollo/",
+          "/^@chakra-ui/",
+          "/^framer-motion/",
+          "/^swiper/react/",
+          "/^style/",
+          "/^common/",
+          "/^@fortawesome/",
+          "/^graphql/",
+          "/^providers/",
+          "/^layout/",
+          "/^components/",
+          "/^assets/"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
+    "react/no-unescaped-entities": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  }
+}
