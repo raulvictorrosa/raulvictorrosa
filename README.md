@@ -1,4 +1,5 @@
-# 💻 Hi there👋 I'm Raul Rosa, Welcome to my profile <img width="24px" src="https://user-images.githubusercontent.com/13530065/175322773-d844c60e-caef-44ee-a744-2b4700d32129.png" /> <img width="24px" src="https://user-images.githubusercontent.com/13530065/175321577-dc2ddc9c-e2f0-4e8a-b270-a0608bba530a.png" />
+# 💻 Hi there👋 I'm Raul Rosa, Welcome to my profile
+<a href="#"><img width="24px" src="https://user-images.githubusercontent.com/13530065/175322773-d844c60e-caef-44ee-a744-2b4700d32129.png" /> <img width="24px" src="https://user-images.githubusercontent.com/13530065/175321577-dc2ddc9c-e2f0-4e8a-b270-a0608bba530a.png" /></a>
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/raulvictorrosa/)](https://www.linkedin.com/in/raulvictorrosa/)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:raulvictorrosa@gmail.com)](mailto:raulvictorrosa@gmail.com)
@@ -19,6 +20,7 @@
 
 <!-- - 🔭 Currently working at [Foton Tech](https://fotontech.io/) -->
 - 📚 Graduated from UDESC in Information Systems
+- &nbsp;<a href="#"><img width="14px" src="https://user-images.githubusercontent.com/13530065/175324602-d8e531fe-fd6d-4117-95ea-e6f1eeed5668.png" /></a> &nbsp;Currently speaking Portuguese and English fluently
 
 <!--
 **raulvictorrosa/raulvictorrosa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
