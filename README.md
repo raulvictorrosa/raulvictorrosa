@@ -1,8 +1,9 @@
-# 💻 Hi there👋 I'm Raul Rosa, Welcome to my profile
+# 💻 Hi there👋 I'm Raul Rosa, Welcome to my profile <img width="24px" src="https://user-images.githubusercontent.com/13530065/175322773-d844c60e-caef-44ee-a744-2b4700d32129.png" /> <img width="24px" src="https://user-images.githubusercontent.com/13530065/175321577-dc2ddc9c-e2f0-4e8a-b270-a0608bba530a.png" />
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/raulvictorrosa/)](https://www.linkedin.com/in/raulvictorrosa/)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:raulvictorrosa@gmail.com)](mailto:raulvictorrosa@gmail.com)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-blue?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/rauulrosa)](https://twitter.com/rauulrosa)
+
 
 <center>
   <table>
