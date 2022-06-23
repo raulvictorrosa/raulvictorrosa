@@ -5,11 +5,11 @@
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-blue?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/rauulrosa)](https://twitter.com/rauulrosa)
 
 <center>
-  <table> 
+  <table>
     <tr>
         <td><img width="400px" height="190px" src="https://github-readme-stats.vercel.app/api/top-langs?username=raulvictorrosa&theme=dark&layout=compact" /></td>
         <td><img width="495px" height="190px" src="https://github-readme-stats.vercel.app/api?username=raulvictorrosa&theme=dark&show_icons=true" /></td>
-    </tr>   
+    </tr>
   </table>
 </center>
 
