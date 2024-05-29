@@ -20,7 +20,7 @@
 
 <!-- - 🔭 Currently working at [Foton Tech](https://fotontech.io/) -->
 - 📚 Graduated from UDESC in Information Systems
-- &nbsp;<a href="#"><img width="14px" src="https://user-images.githubusercontent.com/13530065/175324602-d8e531fe-fd6d-4117-95ea-e6f1eeed5668.png" /></a> &nbsp;Currently speaking **Portuguese** and **English** fluently
+- &nbsp;<a href="#"><img width="14px" src="https://user-images.githubusercontent.com/13530065/175324602-d8e531fe-fd6d-4117-95ea-e6f1eeed5668.png" /></a> &nbsp;**Portuguese** and **English** speaker
 
 <!--
 **raulvictorrosa/raulvictorrosa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
