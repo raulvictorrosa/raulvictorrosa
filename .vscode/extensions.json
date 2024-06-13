@@ -1,0 +1,32 @@
+{
+  "recommendations": [
+    // GIT management / Reviewing
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+
+    // Icons for Visual Studio Code
+    "vscode-icons-team.vscode-icons",
+
+    // Linting / Formatting
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "yoavbls.pretty-ts-errors",
+    "sonarsource.sonarlint-vscode",
+    "styled-components.vscode-styled-components",
+
+    // Testing
+    "orta.vscode-jest",
+
+    // Showing todo comments
+    "exodiusstudios.comment-anchors",
+
+    // Spell Checker
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-british-english",
+
+    // Syntax highlight
+    "webben.browserslist",
+    "mikestead.dotenv",
+  ]
+}
