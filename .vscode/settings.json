@@ -1,0 +1,8 @@
+{
+  "jest.runMode": {
+    "type": "on-demand",
+    // "coverage": true,
+    "showInlineError": true,
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+}
