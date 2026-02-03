@@ -34,9 +34,6 @@ yarn-error.log*
 !.vscode/extensions.json
 .idea
 
-# TanStack Router
-src/routeTree.gen.ts
-
 # Vercel
 .vercel
 
