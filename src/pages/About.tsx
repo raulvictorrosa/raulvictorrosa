@@ -72,11 +72,14 @@ export default function AboutPage() {
             Professional Summary
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            With over 8 years of experience in full-stack development and infrastructure automation,
-            I specialize in building scalable, resilient cloud-native applications. My expertise
-            spans across modern web technologies, cloud platforms (AWS, Azure, GCP), and DevOps
-            practices. I'm passionate about creating efficient, maintainable solutions that drive
-            business value while mentoring teams in best practices and emerging technologies.
+            With over 8 years of experience in frontend development, I specialize in building
+            modern, responsive, and accessible web applications using React and the React ecosystem.
+            My expertise spans React, TypeScript, Next.js, and modern frontend tooling. Currently
+            working at Bosch Portugal on the PRO360 suite, previously contributed to Vodafone's
+            V-Hub platform at Capgemini Engineering serving 5M+ users across Europe and Africa.
+            I'm passionate about creating exceptional user experiences, optimizing performance,
+            and staying current with emerging frontend technologies. Currently expanding my skills
+            into Rust and backend development.
           </p>
         </CardContent>
       </Card>
