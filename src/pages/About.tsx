@@ -50,13 +50,13 @@ export default function AboutPage() {
             </Button>
             <Button variant="outline" asChild>
               <a href={personalInfo.social.linkedin} target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="mr-2 h-4 w-4" />
+                <FaLinkedin className="mr-2 h-4 w-4" aria-hidden="true" />
                 LinkedIn
               </a>
             </Button>
             <Button variant="outline" asChild>
               <a href={personalInfo.social.github} target="_blank" rel="noopener noreferrer">
-                <FaGithub className="mr-2 h-4 w-4" />
+                <FaGithub className="mr-2 h-4 w-4" aria-hidden="true" />
                 GitHub
               </a>
             </Button>

@@ -8,10 +8,10 @@ export const Route = createRootRoute({
     <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
       <div className="min-h-screen flex flex-col">
         <Navigation />
-        <main className="flex-1">
+        <main role="main" className="flex-1">
           <Outlet />
         </main>
-        <footer className="border-t bg-muted/30 backdrop-blur-sm">
+        <footer role="contentinfo" className="border-t bg-muted/30 backdrop-blur-sm">
           <div className="container py-8 text-center">
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Raul Victor Rosa. Built with React, TanStack Router, and
@@ -20,7 +20,7 @@ export const Route = createRootRoute({
           </div>
         </footer>
       </div>
-      <TanStackRouterDevtools />
+      {import.meta.env.DEV && <TanStackRouterDevtools />}
     </ThemeProvider>
   ),
 })

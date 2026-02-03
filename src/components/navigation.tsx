@@ -17,7 +17,7 @@ export function Navigation() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-xl supports-backdrop-filter:bg-background/60">
+    <header role="banner" className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-xl supports-backdrop-filter:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
@@ -36,7 +36,7 @@ export function Navigation() {
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-1">
+        <nav role="navigation" aria-label="Main navigation" className="hidden md:flex items-center gap-1">
           {navItems.map((item) => (
             <Link
               key={item.path}
@@ -62,7 +62,7 @@ export function Navigation() {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <FaGithub className="h-4 w-4" />
+                <FaGithub className="h-4 w-4" aria-hidden="true" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-9 w-9" asChild>
@@ -72,7 +72,7 @@ export function Navigation() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin className="h-4 w-4" />
+                <FaLinkedin className="h-4 w-4" aria-hidden="true" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-9 w-9" asChild>
@@ -82,7 +82,7 @@ export function Navigation() {
                 rel="noopener noreferrer"
                 aria-label="Twitter"
               >
-                <FaXTwitter className="h-4 w-4" />
+                <FaXTwitter className="h-4 w-4" aria-hidden="true" />
               </a>
             </Button>
           </div>
@@ -93,7 +93,7 @@ export function Navigation() {
 
       {/* Mobile Navigation */}
       <div className="md:hidden border-t">
-        <nav className="container mx-auto flex items-center gap-1 py-2 overflow-x-auto">
+        <nav role="navigation" aria-label="Mobile navigation" className="container mx-auto flex items-center gap-1 py-2 overflow-x-auto">
           {navItems.map((item) => (
             <Link
               key={item.path}
